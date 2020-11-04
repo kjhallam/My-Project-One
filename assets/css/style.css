@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: inline-flex;
+  margin-left: 1rem;
+  padding: 5px;
+  height: 6vh;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 5rem;
+  margin-left: 5rem;
+  padding: 2px;
+
+}
+
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding: 0;
+  margin: 0rem;
+
+}
+
+hr {
+  width: 1rem;
+  align-content: center;
+}
+
+.col.s4 {
+  align-content: center;
+  display: inline-flex;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  width: 100vw;
+}
+
+.logo {
+  margin-left: 12px;
+}
+
+
+.m6 {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+#weatherBox {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bolder;
+  margin: 2px 15px;
+  padding: 3px;
+  width: 25vw;
+  height: 50vh;
+  box-shadow: 5px 10px 10px 5px darkgray;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#image {
+  margin-left: 10px;
+  padding: 2px;
+
+}
+#cardDisplay {
+  align-content: center;
+  margin: 1rem;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-bottom: 5px;
+  border: lightgray;
+  border-radius: 5px;
+  width: 100vw;
+  background-color: lightgray;
+  box-shadow: 2px 10px 10px 5px darkgray;
+}
+
+
