@@ -1,17 +1,10 @@
 $(document).ready(function () {
 
 
-  var todayDate;
-  var cityName = [];
-  var image;
-  var maxDistance;
-
-
   function getWeather() {
     var city = document.getElementById("search").value;
     var units = document.getElementById("units").value;
-    fetch("http://api.weatherstack.com/current?access_key=b8825e7d7dff1231e64b523c6fb89e42&query=" + city
-      + "&units=" + units)
+    fetch("http://api.weatherstack.com/current?access_key=b8825e7d7dff1231e64b523c6fb89e42&query=" + city + "&units=" + units)
       .then(a => a.json())
       .then(response => {
         console.log('======================WEATHER RESPONSE======================\n', response , '=========================================\n')
@@ -98,8 +91,8 @@ function trailData(lat,lon) {
 const trails= response.trails.map(function(trail){
 
 
-const trailTemplate = `
-<div class="card">
+const trailTemplate = 
+`<div class="card">
 <div class="card-image">
   <img src="${trail.imgSqSmall}" width="200" height="200">
   <span class="card-title">${trail.name}</span>
@@ -111,8 +104,8 @@ const trailTemplate = `
 <div class="card-action">
   <a href="${trail.url}" target="_blank">Go to the trail site</a>
 </div>
-</div>
-`
+</div>`
+
 return trailTemplate;
 })
 $("#trail-cards").html(trails.join(""))
