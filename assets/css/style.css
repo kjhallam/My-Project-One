@@ -49,36 +49,36 @@ h3 {
   display: flex;
 }
 
+.card-image {
+  justify-content: center;
+  margin: auto;
+  padding: 5px;
+}
+
+/* needs to hide & show current weather */
 #weatherBox {
   display: inline-flex;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin: 2px 3px;
-  padding: 0px 2px;
-  box-shadow: 5px 5px 5px 5px darkgray;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  justify-content: space-between;
+  font-size: 14px;
+  margin: auto;
+  padding: 4px 2px;
 }
 
 #image {
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   width: 150px
 }
 
 /* Need to hide and create individual cards for each location trail */
 #cardDisplay {
-  align-content: center;
-  margin: 1rem;
-  padding: 3rem;
+  
+  margin: auto;
+  padding: 10px 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin-bottom: 2px;
-  border: lightgray;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 2px 10px 10px 5px darkgray;
+
 }
 
 #output {

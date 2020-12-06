@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  function getWeather() {
+  function getWeather(event) {
     var city = document.getElementById("search").value;
     var units = document.getElementById("units").value;
     fetch("http://api.weatherstack.com/current?access_key=b8825e7d7dff1231e64b523c6fb89e42&query=" + city + "&units=" + units)
@@ -80,7 +80,6 @@ $(document).ready(function () {
 
   //hiking API Key
 function trailData(lat,lon) {
-  
 
   $.ajax({
    
@@ -95,15 +94,18 @@ const trailTemplate =
 `<div class="card">
 <div class="card-image">
   <img src="${trail.imgSqSmall}" width="200" height="200">
-  <span class="card-title">${trail.name}</span>
+  <h1 class="card-title">${trail.name}</h1>
 </div>
+<hr>
 <div class="card-content">
-  <p>Difficulty: ${trail.difficulty}</p>
-  <p>Rating: ${trail.stars}</p>
+  <p>Difficulty:  ${trail.difficulty}</p>
+  <p>Rating:  ${trail.stars}</p>
 </div>
+<hr>
 <div class="card-action">
   <a href="${trail.url}" target="_blank">Go to the trail site</a>
 </div>
+<hr>
 </div>`
 
 return trailTemplate;
